@@ -1,0 +1,44 @@
+.profits-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.profit-section-title {
+  font-size: 30px;
+  margin-bottom: 56px;
+}
+.profits-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 92px;
+}
+.profit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 472px;
+  padding: 16px;
+  min-width: 280px;
+  flex-basis: 420px;
+  flex-grow: 1;
+}
+.profit-img-wrapper {
+  height: 232px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.profit-card-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.profit-card-text {
+  /* height: 84px; */
+  max-width: 440px;
+  font-size: 18px;
+}
