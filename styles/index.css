@@ -1,0 +1,22 @@
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 45px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: var(--dark);
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a,button {
+  text-decoration: none;
+  outline: 0
+}
