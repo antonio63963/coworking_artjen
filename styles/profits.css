@@ -13,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 100%;
   row-gap: 92px;
   margin-bottom: 140px;
 }
@@ -43,7 +44,7 @@
   max-width: 440px;
   font-size: 18px;
 }
-
+/* VIDEO */
 .profits-video-block {
   width: 100%;
   display: flex;
@@ -71,5 +72,11 @@
 }
 .profits-text {
   text-align: center;
-  width: 668px;
+  max-width: 668px;
 }
+
+/* @media screen and (max-width: 512px) {
+  .profit-card {
+    flex-basis: 280px;
+  }
+} */

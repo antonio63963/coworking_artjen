@@ -7,7 +7,8 @@
   height: 342px;
   margin-bottom: 40px;
 }
-
+.backLine-basic {
+}
 .banner-backline {
   fill: none;
   stroke: #e24c5b;
@@ -18,7 +19,7 @@
   stroke-dashoffset: 2000;
   max-width: 100%;
   max-height: 181px;
-  animation: dash 3s linear .3s forwards;
+  animation: dash 3s linear 0.3s forwards;
 }
 
 .banner-machine {
@@ -35,7 +36,7 @@
   width: 17%;
   left: 22%;
   opacity: 0;
-  animation: reveal 1s ease .4s forwards;
+  animation: reveal 1s ease 0.4s forwards;
 }
 .banner-bus {
   position: absolute;
@@ -45,13 +46,86 @@
   opacity: 0;
   animation: reveal 1s ease 1.4s forwards;
 }
-.banner-buyer {
+/* .banner-buyer {
   position: absolute;
   width: 30%;
   left: 66%;
   padding-bottom: 40px;
   opacity: 0;
   animation: reveal 1.5s ease 2s forwards;
+} */
+
+/* STEND WITH WOMAN */
+.banner-shop {
+  position: absolute;
+  width: 20%;
+  left: 70%;
+}
+.banner-stend {
+  opacity: 0;
+  animation: reveal 1.5s ease 2s forwards;
+}
+.banner-shop-images {
+  position: relative;
+}
+.banner-woman {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  transform: translateX(-15px);
+  opacity: 0;
+  animation: woman 1s ease 3.3s forwards;
+}
+.tShirt-1 {
+  position: absolute;
+  transform-origin: top;
+  width: 28%;
+  left: -5%;
+  top: 17%;
+  z-index: 10;
+  transform: scale(0);
+  animation: scale .5s ease 2.3s forwards;
+}
+.tShirt-2 {
+  position: absolute;
+  transform-origin: top;
+  width: 20%;
+  top: 17%;
+  left: 13%;
+  z-index: 9;
+  transform: scale(0);
+  animation: scale .5s ease 2.5s forwards;
+}
+.tShirt-3 {
+  position: absolute;
+  transform-origin: top;
+  width: 20%;
+  top: 17%;
+  left: 25%;
+  z-index: 8;
+  transform: scale(0);
+  animation: scale .5s ease 2.7s forwards;
+}
+.trousers-1 {
+  position: absolute;
+  transform-origin: top;
+  width: 15%;
+  top: 17%;
+  left: 38%;
+  z-index: 7;
+  transform: scale(0);
+  animation: scale .5s ease 2.9s forwards;
+}
+.trousers-2 {
+  position: absolute;
+  transform-origin: top;
+  width: 15%;
+  top: 17%;
+  left: 50%;
+  z-index: 6;
+  transform: scale(0);
+  animation: scale .5s ease 3.1s forwards;
 }
 
 .banner-note {
@@ -68,5 +142,26 @@
 @keyframes reveal {
   to {
     opacity: 1;
+  }
+}
+@keyframes scale {
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes woman {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-wrapper {
+    width: 100%;
+    height: 672px;
+  }
+  .line-desktop {
+    display: none;
   }
 }
