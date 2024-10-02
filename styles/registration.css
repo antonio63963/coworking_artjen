@@ -8,7 +8,7 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.registration-content {
+.registration-form {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -23,49 +23,15 @@
 .informed {
   display: flex;
   column-gap: 20px;
-  border: 8px solid var(--grey);
-}
-/* square checkbox */
-label.informed-label {
-  position: relative;
-  display: block;
-  width: 26px;
-  height: 26px;
-  min-width: 26px;
-  min-height: 26px;
-  border: 2px solid var(--grey);
-}
-#informed-checkbox {
-  visibility: hidden;
-}
-.registration-iconContainer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-#informed-checkbox:checked+.registration-iconContainer {
-  display: flex;
-}
-.informed-label:has(> #informed-checkbox:checked) {
-  background-color: var(--dark);
-  border: none;
-}
-.checkIcon {
-  width: 24px;
-  transform: translate3d(0, -5px, 0);
+  border: 8px solid var(--xlGrey);
+  padding: 34px 20px 34px 40px;
 }
 
-/* FORM */
-.registration-form {
-  flex-grow: 1;
-  min-width: 280px;
+/* MAIN CHANEL */
+.registration-main-chanel {
+  padding-left: 48px;
 }
+
 
 @media screen and (max-width: 600px) {
   .registration-title {

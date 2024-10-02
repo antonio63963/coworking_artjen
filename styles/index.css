@@ -24,3 +24,10 @@ a,button {
   text-decoration: none;
   outline: 0
 }
+
+fieldset {
+  border: none;
+}
+legend {
+  font-size: 18px;
+}

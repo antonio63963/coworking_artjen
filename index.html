@@ -13,6 +13,7 @@
   <link href="styles/profits.css" rel="stylesheet">
   <link href="styles/coworking.css" rel="stylesheet">
   <link href="styles/registration.css" rel="stylesheet">
+  <link href="styles/custom_input.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -159,20 +160,58 @@
     <!-- Registration -->
     <section class="registration">
       <h2 class="registration-title">Анкета реєстрації</h2>
-      <div class="registration-content">
+      <form class="registration-form">
         <div class="registration-options">
           <div class="informed">
-            <label class="informed-label">
-              <input id="informed-checkbox" type="checkbox">
-              <div class="registration-iconContainer"><img src="images/checkIcon.svg" class="checkIcon" alt="check">
+            <label>
+              <input type="checkbox" id="informed" name="informed" />
+              <div class="customInput">
+                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
               </div>
+              Я ознайомлений і мене влаштовує, що замовлення продукції гуртом можливе лише повним розмірним рядом.
             </label>
-            <p>Я ознайомлений і мене влаштовує, що замовлення продукції гуртом можливе лише повним розмірним рядом.</p>
           </div>
+
+          <!-- SELECT MAIN CHANEL -->
+          <fieldset class="registration-main-chanel">
+            <legend>Ваш основний канал продажу:</legend>
+            <!-- +++++++++++++++++ -->
+            <label>
+              <input type="radio" id="shops" name="mainChanel" value="shops" checked />
+              <div class="customInput">
+                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+              </div>
+              Мережа магазинів
+            </label>
+            <!-- ++++++++++++++++++++ -->
+            <label>
+              <input type="radio" id="singleShop" name="mainChanel" value="singleShop" />
+              <div class="customInput">
+                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+              </div>
+              Роздрібний магазин
+            </label>
+            <!-- ++++++++++++++++++++++++ -->
+            <label>
+              <input type="radio" id="tradingPoint" name="mainChanel" value="tradingPoint" />
+              <div class="customInput">
+                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+              </div>
+              Торгова точка на ринку
+            </label>
+            <!-- ++++++++++++++++++++++++ -->
+            <label>
+              <input type="radio" id="internet" name="mainChanel" value="internet" />
+              <div class="customInput">
+                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+              </div>
+              Продажі в інтернеті
+            </label>
+          </fieldset>
         </div>
-        <form action="" method="post" class="registration-form"></form>
-      </div>
+      </form>
     </section>
+
   </main>
 
 </body>
