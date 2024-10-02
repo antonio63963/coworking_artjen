@@ -7,8 +7,7 @@
   height: 342px;
   margin-bottom: 40px;
 }
-.backLine-basic {
-}
+
 .banner-backline {
   fill: none;
   stroke: #e24c5b;
@@ -155,11 +154,12 @@
     transform: translateX(0);
   }
 }
-
+/* MEDIA */
 @media screen and (max-width: 600px) {
   .banner-wrapper {
     width: 100%;
     height: 672px;
+    margin-bottom: 32px;
   }
   .line-desktop {
     display: none;
