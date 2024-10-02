@@ -38,9 +38,6 @@
   display: flex;
   align-items: center;
 
-  opacity: 0;
-  animation: reveal 1s ease 0.4s forwards;
-
   .banner-clothes-container {
     position: relative;
     width: 100%;
