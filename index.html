@@ -12,6 +12,7 @@
   <link href="styles/banner.css" rel="stylesheet">
   <link href="styles/profits.css" rel="stylesheet">
   <link href="styles/coworking.css" rel="stylesheet">
+  <link href="styles/registration.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -59,10 +60,18 @@
       <!-- mobile backLine -->
 
       <!-- machine -->
-      <img class="banner-machine" src="images/machine.svg" alt="">
-      <img class="banner-clothes" src="images/clothes.svg" alt="">
-      <img class="banner-bus" src="images/bus.svg" alt="">
-      <!-- <img class="banner-buyer" src="images/buyer.svg" alt="buyer"> -->
+      <img class="banner-machine" src="images/machine.svg" alt="machine">
+      <!-- <img class="banner-clothes" src="images/clothes.svg" alt="clothes"> -->
+      <div class="banner-clothes">
+        <div class="banner-clothes-container">
+          <img class="banner-bg" src="images/prodClothBg.svg" alt="bg">
+          <img class="banner-prod-1" src="images/prodCloth1.svg" alt="production">
+          <img class="banner-prod-2" src="images/prodCloth2.svg" alt="production">
+          <img class="banner-prod-3" src="images/prodCloth3.svg" alt="production">
+        </div>
+      </div>
+      <img class="banner-bus" src="images/bus.svg" alt="bus">
+
       <div class="banner-shop">
         <div class="banner-shop-images">
           <img src="images/stend.svg" class="banner-stend" alt="stend">
@@ -149,11 +158,15 @@
 
     <!-- Registration -->
     <section class="registration">
-      <h2>Анкета реєстрації</h2>
+      <h2 class="registration-title">Анкета реєстрації</h2>
       <div class="registration-content">
         <div class="registration-options">
           <div class="informed">
-            <input type="checkbox">
+            <label class="informed-label">
+              <input id="informed-checkbox" type="checkbox">
+              <div class="registration-iconContainer"><img src="images/checkIcon.svg" class="checkIcon" alt="check">
+              </div>
+            </label>
             <p>Я ознайомлений і мене влаштовує, що замовлення продукції гуртом можливе лише повним розмірним рядом.</p>
           </div>
         </div>

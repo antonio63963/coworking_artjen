@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 a,button {
   text-decoration: none;
   outline: 0
