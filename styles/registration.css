@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
 .registration-form-content {
   width: 100%;
@@ -30,7 +31,7 @@
 
 /* OPTIONS */
 .registration-options {
-  width: 100%;
+  width: 50%;
   min-width: 280px;
   display: flex;
   flex-direction: column;
@@ -56,11 +57,9 @@ fieldset.registration-main-chanel {
   flex-direction: column;
   row-gap: 40px;
   align-items: center;
-  width: 100%;
+  width: 50%;
   min-width: 280px;
 }
-
-
 
 @media screen and (max-width: 840px) {
   .registration-main-chanel-title {
@@ -77,5 +76,9 @@ fieldset.registration-main-chanel {
 @media screen and (max-width: 600px) {
   .registration-form-content {
     flex-direction: column;
+  }
+  .registration-fields,
+  .registration-options {
+    width: 100%;
   }
 }

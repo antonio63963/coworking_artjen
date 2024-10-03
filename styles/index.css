@@ -9,6 +9,7 @@ body {
   align-items: center;
   color: var(--dark);
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 * {
