@@ -3,38 +3,79 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 132px;
 }
 .registration-title {
   text-align: center;
   margin-bottom: 30px;
 }
 .registration-form {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-/* OPTIONS */
-.registration-options {
-  flex-grow: 1;
-  min-width: 280px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.informed {
+.registration-form-content {
+  width: 100%;
   display: flex;
-  column-gap: 20px;
+  column-gap: 3%;
+  row-gap: 50px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.informed-border {
   border: 8px solid var(--xlGrey);
   padding: 34px 20px 34px 40px;
 }
 
+/* OPTIONS */
+.registration-options {
+  width: 100%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
 /* MAIN CHANEL */
-.registration-main-chanel {
-  padding-left: 48px;
+fieldset.registration-main-chanel {
+  margin-left: 48px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.registration-main-chanel-title {
+  margin-bottom: 20px;
+  margin-left: 48px;
+  font-weight: bold;
+  color: var(--grey);
+}
+
+/* Registration fields */
+.registration-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  width: 100%;
+  min-width: 280px;
 }
 
 
+
+@media screen and (max-width: 840px) {
+  .registration-main-chanel-title {
+    margin-left: 0;
+  }
+  .informed-border {
+    padding: 20px;
+    border-width: 4px;
+  }
+  fieldset.registration-main-chanel {
+    margin-left: 24px;
+  }
+}
 @media screen and (max-width: 600px) {
-  .registration-title {
-    margin-bottom: 20px;
+  .registration-form-content {
+    flex-direction: column;
   }
 }

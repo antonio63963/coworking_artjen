@@ -14,6 +14,7 @@
   <link href="styles/coworking.css" rel="stylesheet">
   <link href="styles/registration.css" rel="stylesheet">
   <link href="styles/custom_input.css" rel="stylesheet">
+  <link href="styles/footer.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -160,60 +161,102 @@
     <!-- Registration -->
     <section class="registration">
       <h2 class="registration-title">Анкета реєстрації</h2>
+      <!-- FORM -->
       <form class="registration-form">
-        <div class="registration-options">
-          <div class="informed">
-            <label>
-              <input type="checkbox" id="informed" name="informed" />
-              <div class="customInput">
-                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
-              </div>
-              Я ознайомлений і мене влаштовує, що замовлення продукції гуртом можливе лише повним розмірним рядом.
-            </label>
-          </div>
+        <div class="registration-form-content">
+          <div class="registration-options">
+            <div class="informed-checkbox">
+              <label class="informed-border">
+                <input type="checkbox" id="informed" name="informed" />
+                <div class="customInput">
+                  <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+                </div>
+                Я ознайомлений і мене влаштовує, що замовлення продукції гуртом можливе лише повним розмірним рядом.
+              </label>
+            </div>
 
-          <!-- SELECT MAIN CHANEL -->
-          <fieldset class="registration-main-chanel">
-            <legend>Ваш основний канал продажу:</legend>
-            <!-- +++++++++++++++++ -->
-            <label>
-              <input type="radio" id="shops" name="mainChanel" value="shops" checked />
-              <div class="customInput">
-                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
-              </div>
-              Мережа магазинів
-            </label>
-            <!-- ++++++++++++++++++++ -->
-            <label>
-              <input type="radio" id="singleShop" name="mainChanel" value="singleShop" />
-              <div class="customInput">
-                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
-              </div>
-              Роздрібний магазин
-            </label>
-            <!-- ++++++++++++++++++++++++ -->
-            <label>
-              <input type="radio" id="tradingPoint" name="mainChanel" value="tradingPoint" />
-              <div class="customInput">
-                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
-              </div>
-              Торгова точка на ринку
-            </label>
-            <!-- ++++++++++++++++++++++++ -->
-            <label>
-              <input type="radio" id="internet" name="mainChanel" value="internet" />
-              <div class="customInput">
-                <img src="images/checkIcon.svg" class="checkIcon" alt="check">
-              </div>
-              Продажі в інтернеті
-            </label>
-          </fieldset>
+            <!-- SELECT MAIN CHANEL -->
+            <fieldset class="registration-main-chanel">
+              <legend class="registration-main-chanel-title">Ваш основний канал продажу:</legend>
+              <!-- +++++++++++++++++ -->
+              <label>
+                <input type="radio" id="shops" name="mainChanel" value="shops" checked />
+                <div class="customInput">
+                  <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+                </div>
+                Мережа магазинів
+              </label>
+              <!-- ++++++++++++++++++++ -->
+              <label>
+                <input type="radio" id="singleShop" name="mainChanel" value="singleShop" />
+                <div class="customInput">
+                  <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+                </div>
+                Роздрібний магазин
+              </label>
+              <!-- ++++++++++++++++++++++++ -->
+              <label>
+                <input type="radio" id="tradingPoint" name="mainChanel" value="tradingPoint" />
+                <div class="customInput">
+                  <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+                </div>
+                Торгова точка на ринку
+              </label>
+              <!-- ++++++++++++++++++++++++ -->
+              <label>
+                <input type="radio" id="internet" name="mainChanel" value="internet" />
+                <div class="customInput">
+                  <img src="images/checkIcon.svg" class="checkIcon" alt="check">
+                </div>
+                Продажі в інтернеті
+              </label>
+            </fieldset>
+          </div>
+          <!-- REGISTRATION FIELDS -->
+          <div class="registration-fields">
+            <input name="comany" type="text" placeholder="Назва компанії">
+            <input name="city" type="text" placeholder="З якого Ви міста">
+            <input name="userName" type="text" placeholder="Ім'я">
+            <input name="phone" type="text" placeholder="Телефон">
+          </div>
         </div>
+        <button type="submit">ВIДПРАВИТИ ЗАЯВКУ</button>
       </form>
     </section>
-
   </main>
+  <!-- FOOTER -->
+  <div class="footer-wrapper">
+    <footer class="footer">
+      <div class="contacts">
+        <span class="contacts-phone">+38 067 380 39 71</span>
+        <p class="contacts-address">Україна, м. Хмельницький, Будівельників 22/1 (<span>див. на карті</span>)</p>
+      </div>
+      <!-- SOCIALS -->
+      <div class="socials">
+        <h3>Приєднуйся до нас</h3>
+        <div class="socials-row-icons">
+          <!-- instagram -->
+          <a class="social-link" href="https://www.instagram.com/arjen_official_page/" target="_blank" rel="nofollow">
+            <img class="social-icon" src="images/socials/instagram.svg" alt="">
+          </a>
+          <!-- facebook -->
+          <a class="social-link" href="https://www.instagram.com/arjen_official_page/" target="_blank" rel="nofollow">
+            <img class="social-icon" src="images/socials/fb.svg" alt="">
+          </a>
+          <!-- facebook -->
+          <a class="social-link" href="https://www.instagram.com/arjen_official_page/" target="_blank" rel="nofollow">
+            <img class="social-icon-long" src="images/socials/youtube.svg" alt="">
+          </a>
 
+        </div>
+      </div>
+      <!-- POLITICS -->
+      <div class="politics">
+        <a href="#">Політика конфіденційності</a>
+        <a href="#"> Політика повернення / обміну товарів</a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

@@ -49,3 +49,16 @@ input[type="checkbox"]:checked + .customInput>img,
 input[type="radio"]:checked + .customInput>img {
   display: block;
 }
+
+/* text input */
+input[type="text"] {
+  padding: 20px;
+  outline: none;
+  border: 1px solid var(--grey);
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--lightGrey);
+  font-size: 18px;
+}
