@@ -55,6 +55,7 @@ input[type="text"], input[type="tel"] {
   padding: 20px;
   outline: none;
   border: 1px solid var(--grey);
+  height: auto;
   width: 100%;
 }
 
