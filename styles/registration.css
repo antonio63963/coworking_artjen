@@ -48,7 +48,6 @@ fieldset.registration-main-chanel {
   margin-bottom: 20px;
   margin-left: 48px;
   font-weight: bold;
-  color: var(--grey);
 }
 
 /* Registration fields */
@@ -62,9 +61,6 @@ fieldset.registration-main-chanel {
 }
 
 @media screen and (max-width: 840px) {
-  .registration-main-chanel-title {
-    margin-left: 0;
-  }
   .informed-border {
     padding: 20px;
     border-width: 4px;

@@ -6,7 +6,6 @@
   margin-top: 100px;
 }
 .profit-section-title {
-  font-size: 30px;
   margin-bottom: 56px;
 }
 .profits-row {
@@ -41,7 +40,6 @@
 }
 .profit-card-text {
   max-width: 440px;
-  font-size: 18px;
 }
 /* VIDEO */
 .profits-video-block {
@@ -55,7 +53,6 @@
 
 .profits-video-container {
   position: relative;
-  /* overflow: hidden; */
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   margin-bottom: 130px;
@@ -74,6 +71,8 @@
   text-align: center;
   max-width: 668px;
   margin-bottom: 60px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 @media screen and (max-width: 600px) {

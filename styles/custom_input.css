@@ -7,7 +7,7 @@ label > input[type="radio"] {
 label:has(> input[type="checkbox"]),
 label:has(> input[type="radio"]) {
   display: flex;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 label > .customInput {
@@ -61,5 +61,4 @@ input[type="text"], input[type="tel"] {
 
 input::placeholder {
   color: var(--lightGrey);
-  font-size: 18px;
 }
