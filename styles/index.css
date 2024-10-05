@@ -37,6 +37,13 @@ legend {
 
 button {
   padding: 20px 50px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--dark);
   text-transform: uppercase;
+  color: var(--grey);
+  background-color: transparent;
+}
+button:hover {
+  background-color: var(--dark);
+  color: white;
+  border: none;
 }

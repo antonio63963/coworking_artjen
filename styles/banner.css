@@ -64,7 +64,7 @@
     position: absolute;
     width: 50%;
     top: 54%;
-    left: 0;
+    left: 0px;
     transform-origin: bottom left;
     transform: scale(0);
     animation: scale 1s ease .7s forwards;

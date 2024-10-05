@@ -24,9 +24,10 @@
   margin-bottom: 60px;
 }
 
-.informed-border {
+.informed-checkbox {
   border: 8px solid var(--xlGrey);
   padding: 34px 20px 34px 40px;
+  cursor: pointer;
 }
 
 /* OPTIONS */
